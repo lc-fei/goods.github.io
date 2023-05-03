@@ -1,0 +1,561 @@
+.ce {
+    width: 1168px;
+    margin: auto;
+}
+
+
+body {
+    height: 2000px;
+    background-color: rgb(234, 232, 235);
+}
+
+.mfix {
+    position: fixed;
+    z-index: 999;
+    top: 550px;
+    height: 0px;
+    float: right;
+    right: 10px;
+}
+
+.mfix>a {
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid #a0a0a0;
+    color: #a0a0a0;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 80px;
+    background: transparent;
+}
+
+.header {
+    /* position: fixed;
+    z-index: 2; */
+    position: relative;
+    z-index: 2;
+    height: 45px;
+    background-color: rgb(51, 51, 51);
+    width: 100%;
+}
+
+.nav {
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    cursor: default;
+}
+
+.header .nav .left .nav1 {
+    /* color: #fff; */
+    border-right: 1px solid #a0a0a0;
+}
+
+.header .nav .left .nav2 {
+    color: #fff;
+    border-right: 1px solid #a0a0a0;
+}
+
+.header .nav .left {
+    float: left;
+}
+
+.header .nav .right {
+    float: right;
+    margin-right: 40px;
+}
+
+.header .nav a[class^="nav"] {
+    display: inline-block;
+    /* background-color: ; */
+    padding: 0 20px;
+    font-size: 18px;
+    color: #a0a0a0;
+    border-right: 1px solid;
+}
+
+.header .nav a:first-child {
+    border-left: 1px solid #a0a0a0;
+}
+
+.header .nav .left a:hover {
+    color: #fff;
+    border-right: 1px solid #a0a0a0;
+}
+
+.header .nav .right p {
+    display: inline-block;
+    font-size: 20px;
+    color: #a0a0a0;
+    cursor: default;
+}
+
+.header .nav .right a[class^="user"] {
+    display: inline-block;
+    /* background-color: ; */
+    padding: 0 10px;
+    border: 0;
+    font-size: 18px;
+    color: #a0a0a0;
+
+}
+
+.header .nav .right a[class^="user"]:hover {
+    color: #fff;
+}
+
+.header .nav .right .bigu {
+    /* float: right; */
+    height: 45px;
+    width: 45px;
+    /* background-color: pink; */
+    margin: 0px;
+    border-radius: 50%;
+    transition: all 0.3s;
+    position: absolute;
+    z-index: 999;
+    right: 0px;
+}
+
+
+.header .nav .right .uimg {
+    float: right;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    position: relative;
+}
+
+.header .nav .right .uimg:hover .ulist {
+    display: block;
+}
+
+.header .nav .right .uimg .biguu {
+    position: absolute;
+    z-index: 999;
+}
+
+.header .nav .right .uimg .ulist {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    top: 45px;
+    right: -80px;
+    z-index: 999;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .3);
+    border-radius: 5px;
+}
+
+.header .nav .right .uimg .ulist .uh {
+    border-bottom: 1px solid rgba(51, 51, 51, .5);
+}
+
+.header .nav .right .uimg .ulist .um {
+    text-align: left;
+    text-indent: 20px;
+    line-height: 35px;
+}
+
+.header .nav .right .uimg .ulist .um li a {
+    color: rgb(153, 154, 170);
+    text-align: left;
+}
+
+.header .nav .right .uimg .ulist .um .btm {
+
+    border-bottom: 1px solid rgba(51, 51, 51, .5);
+}
+
+.header .nav .right .uimg .ulist .um ul li:hover {
+    background-color: rgb(240, 240, 245);
+}
+
+.header .nav .right .bigu:hover {
+    transform: scale(1.05, 1.05);
+    z-index: 999;
+}
+
+/* find从这里开始 */
+.find {}
+
+.find1 {
+    position: sticky;
+    z-index: 999;
+    top: 5px;
+    height: 40px;
+    width: 800px;
+    margin: auto;
+    margin-top: 40px;
+    /* background-color: pink; */
+    border: 2px solid rgb(255, 80, 0);
+    background-color: #fff;
+}
+
+.find1 input {
+    float: left;
+    padding: 0px;
+    border: 0px;
+    outline: none;
+    height: 26px;
+    width: 715px;
+    margin: 7px 0px 7px 15px;
+    font-size: 14px;
+}
+
+.find1 button {
+    cursor: pointer;
+    float: right;
+    font-size: 26px;
+    color: #fff;
+    line-height: 40px;
+    height: 40px;
+    width: 70px;
+    background-color: rgb(255, 80, 0);
+    border: none;
+}
+
+.find1 button:hover {
+    background-color: rgb(200, 22, 35);
+}
+
+.find2 {
+    width: 700px;
+    margin: auto;
+    margin-top: 8px;
+    margin-bottom: 9px;
+    font-size: 3px;
+}
+
+.find2 li {
+    display: inline-block;
+    margin: 0px 2px;
+}
+
+.find2 li a {
+    color: #a0a0a0;
+}
+
+.find2 li a:hover {
+    color: rgb(255, 80, 0) !important;
+}
+
+.main {
+    background-color: #fff;
+    /* height: 5000px; */
+    border-radius: 30px;
+    padding: 15px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, .1);
+}
+
+.main .main1 .m11 {
+    float: left;
+    height: 365px;
+    width: 270px;
+    background-color: rgb(247, 249, 250);
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.main .main1 .m11 h3 {
+    margin: 15px 0px 10px 20px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.main .main1 .m11 ul {
+    margin-left: 20px;
+    line-height: 37px;
+    font-size: 15px;
+}
+
+.main .main1 .m11 ul li:hover {
+    color: rgb(255, 80, 0);
+}
+
+.main .main1 .m11 ul li:hover a {
+    color: rgb(255, 80, 0);
+}
+
+.main .main1 .m11 ul a:hover {
+    color: rgb(255, 80, 0);
+    text-decoration: underline;
+}
+
+.main .main1 .m11 ul li {}
+
+.main .main1 .m11 ul a {
+    display: inline-block;
+    margin-left: 8px;
+    margin-right: 8px;
+    color: #a0a0a0;
+    font-weight: 300;
+}
+
+.main .main1 .m11 ul i {
+    font-style: normal;
+    color: #a0a0a0;
+}
+
+.main .main1 .m12 {
+    float: left;
+    height: 50px;
+    width: 850px;
+    background-color: rgb(247, 249, 250);
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.main .main1 .m12 ul {
+    margin-left: 15px;
+}
+
+.main .main1 .m12 li {
+    display: inline-block;
+    line-height: 50px;
+}
+
+.main .main1 .m12 a {
+    display: inline-block;
+    line-height: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.main .main1 .m12 a:hover {
+    color: rgb(255, 80, 0);
+}
+
+.main .main1 .m13 {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    height: 295px;
+    width: 530px;
+    background-color: rgb(247, 249, 250);
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.main .main1 .m13 .item {
+    position: absolute;
+    top: 0;
+    width: 530px;
+    height: 295px;
+    transition: all 0.5s;
+    background-size: contain;
+}
+
+.item1 {
+    background-image: url(../images/淘宝焦点图1.jpg);
+}
+
+.item2 {
+    background-image: url(../images/淘宝焦点图1.jpg);
+    left: 100%;
+}
+
+.item3 {
+    background-image: url(../images/淘宝焦点图1.jpg);
+    left: 200%;
+}
+
+.main .main1 .m13 input {
+    position: relative;
+    z-index: 100 !important;
+    display: none;
+}
+
+.main .main1 .m13 .select {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 10px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .main1 .m13 .select label {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1.5px solid white;
+}
+
+.main .main1 .m13 input:nth-of-type(1):checked~.select label:nth-of-type(1) {
+    background-color: rgb(26, 26, 26);
+}
+
+.main .main1 .m13 input:nth-of-type(2):checked~.select label:nth-of-type(2) {
+    background-color: rgb(26, 26, 26);
+}
+
+.main .main1 .m13 input:nth-of-type(3):checked~.select label:nth-of-type(3) {
+    background-color: rgb(26, 26, 26);
+}
+
+.main .main1 .m13 input:nth-of-type(1):checked~.item {
+    transform: translateX(0);
+}
+
+.main .main1 .m13 input:nth-of-type(2):checked~.item {
+    transform: translateX(-100%);
+}
+
+.main .main1 .m13 input:nth-of-type(3):checked~.item {
+    transform: translateX(-200%);
+}
+
+.main .main1 .m14 {
+    float: left;
+    height: 295px;
+    width: 300px;
+    background-color: rgb(247, 249, 250);
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.main .main1 .m14 h3 {
+    display: inline-block;
+    margin: 10px 0px 10px 20px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.more {
+    float: right;
+    margin: 10px;
+}
+
+.more:hover {
+    color: rgb(255, 80, 0) !important;
+}
+
+body .m14 ul .more:hover {
+    color: rgb(255, 80, 0);
+}
+
+.main .main1 .m14 li {
+    color: red;
+    margin-left: 10px;
+}
+
+
+.main .main1 .m14 a {
+    color: #a0a0a0;
+    line-height: 25px;
+}
+
+.main .main1 .m14 a:hover {
+    color: rgb(255, 80, 0);
+}
+
+.main .main1 .m14 i {
+    margin-left: 39px;
+    font-size: 20px;
+    color: #a0a0a0;
+}
+
+.main .like {
+    margin: 430px 10px 0px 10px;
+}
+
+.main .like h3 {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.main .like ul a {
+    float: left;
+    position: relative;
+    z-index: 1;
+    height: 185px;
+    width: 355px;
+    margin: 13px;
+    border-radius: 15px;
+    background-color: rgb(247, 249, 250);
+    color: rgb(51, 51, 51);
+    transition: all 0.5s;
+}
+
+.main .like ul a .d1 {
+    position: absolute;
+    z-index: 1;
+    height: 160px;
+    width: 160px;
+    border-radius: 10px;
+    top: 12px;
+    left: 10px;
+    overflow: hidden;
+
+}
+
+
+.main .like ul a .d1 img {
+    height: 160px;
+    width: 160px;
+    border-radius: 10px;
+}
+
+.main .like ul a .d1 img:hover {
+    transform: scale(1.03, 1.03);
+}
+
+.main .like ul a .d2 {
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+    top: 12px;
+    left: 180px;
+    height: 40px;
+    width: 160px;
+}
+
+.main .like ul a .d3 {
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+    top: 60px;
+    left: 180px;
+    height: 20px;
+    border: 1px solid rgb(255, 80, 0);
+    color: rgb(255, 80, 0);
+    line-height: 20px;
+    font-size: 13px;
+}
+
+.main .like ul a .d3 i {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.main .like ul a .d4 {
+    position: absolute;
+    z-index: 1;
+    bottom: 25px;
+    left: 180px;
+    color: rgb(255, 80, 0);
+}
+
+.main .like ul a .d4 .i2 {
+    font-size: 25px;
+}
+
+.main .like ul a i:hover {
+    color: rgb(255, 80, 0);
+}
+
+.main .like ul a:hover {
+    box-shadow: inset 0px 0px 0px 0.7px rgb(255, 80, 0);
+}
